@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #e0e0e0;
+    background: #121212;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://www.transparenttextures.com/patterns/cubes.png'), linear-gradient(135deg, #1d1d1d 25%, #0a0a0a 100%);
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.login-container {
+    text-align: center;
+    background: #1e1e1e;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.login-image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 2px solid #e0e0e0;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #e0e0e0;
+}
+
+h1 .scanner-app {
+    color: #ecb349; /* Màu tím */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+input[type="password"]::placeholder {
+    color: #888;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
