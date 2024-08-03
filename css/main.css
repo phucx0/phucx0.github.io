@@ -6,7 +6,6 @@ body {
     font-family: Arial, sans-serif;
     background-color: #10101A;
     color: #e0e0e0;
-    width: 400px;
 }
 
 .header {
@@ -94,12 +93,12 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0px 20px 10px 20px;
+    margin: 0px 20px 5px 20px;
 }
 
 .image-container img {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     margin-bottom: 5px;
     border-radius: 5px;
     border: 1px;
