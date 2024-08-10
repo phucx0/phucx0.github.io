@@ -1,0 +1,203 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #161625;
+    color: #e0e0e0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 90%;
+    font-weight: bold;
+}
+
+.list-btn {
+    background-color: #171726;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 20px;
+    color: #ecb349;
+}
+
+.body {
+    width: 90%;
+    text-align: center;
+}
+
+.checked-count {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.seedphrase-container{
+    background-color:#161e30;
+    width: 350px;
+    border-radius: 5px;
+    height: 210px;
+    padding: 2px 0px 2px 10px;
+    text-align: left;
+    color: #55bd5a;
+    margin: auto;
+    margin-bottom: 20px;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.output-box {
+    background-color:#161e30;
+    width: 350px;
+    height: 80px;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.image-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 20px 5px 20px;
+}
+
+.image-container img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px;
+}
+.checked-counts {
+    text-align: left;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+}
+
+#start-btn {
+    width: 150px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-weight: bold;
+}
+
+#start-btn:hover {
+    background-color: #45a049;
+}
+
+#stop-btn {
+    width: 150px;
+    background-color: #f44336;
+    font-weight: bold;
+    color: #fff;
+}
+
+#stop-btn:hover {
+    background-color: #e53935;
+}
+
+@media (max-width: 600px) {
+    .logo {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .image-container img {
+        width: 60px;
+        height: 60px;
+    }
+    button {
+        width: 80px;
+        font-size: 14px;
+    }
+}
+footer .a {
+    font-weight: bold;
+    margin: 20px;
+    font-size: 16px;
+}
+footer .a a {
+    color: #ecb349;
+    text-decoration: none;
+}
+footer .a a:hover {
+    text-decoration: underline;
+}
+
+.task-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #2c3e50;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-size: 16px;
+}
+.task-bar .item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.task-bar .item:hover {
+    background-color: #34495e;
+}
+.task-bar .item1 {
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #3498db;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.task-bar .item1:hover {
+    background-color: #2980b9;
+}
