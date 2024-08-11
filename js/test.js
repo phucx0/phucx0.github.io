@@ -77,6 +77,6 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
 
 setInterval(() => {
-    getUserInfo(),
+    //getUserInfo(),
     getidUSER()
 }, 5000);
