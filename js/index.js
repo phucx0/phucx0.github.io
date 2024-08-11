@@ -73,22 +73,32 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 let attempts = 0;
 const maxAttempts = 5;
 
-function getidUSER(){
-    window.Telegram.WebApp.ready();
-    const user = window.Telegram.WebApp.initDataUnsafe.user;
-    if (user) {
-        const userId = user.id;
-        console.log('User ID:', userId);
-    } else {
-        if (attempts < maxAttempts) {
-            attempts++;
-            console.log('Attempt', attempts, ': User information not found. Retrying...');
-            setTimeout(getidUSER, 5000); // Thử lại sau 5 giây
-        } else {
-            console.log('Max attempts reached. Redirecting...');
-            window.location.href = '/index.html';
-        }
-    }
+async function getidUSER(){
+
+    const tg = window.Telegram.WebApp;
+        
+        tg.ready();
+        tg.onEvent('mainButtonClicked', function() {
+            const userId = tg.initDataUnsafe.user.id;
+            console.log('User ID:', userId);
+        });
+    // window.Telegram.WebApp.ready();
+    // const user = window.Telegram.WebApp.initDataUnsafe.user;
+    // if (user) {
+    //     const userId = user.id;
+    //     console.log('User ID:', userId);
+    // } else {
+    //     if (attempts < maxAttempts) {
+    //         attempts++;
+    //         console.log('Attempt', attempts, ': User information not found. Retrying...');
+    //         setTimeout(getidUSER, 5000); // Thử lại sau 5 giây
+    //     } else {
+    //         console.log('Max attempts reached. Redirecting...');
+    //         window.location.href = '/index.html';
+    //     }
+    // }
 }
 
-getidUSER();
+setInterval(() =>{
+    getidUSER();
+},5000)
