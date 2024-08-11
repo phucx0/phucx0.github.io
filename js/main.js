@@ -20,6 +20,11 @@ const wordList = [
 ];
 
 
+// const upgrade = document.getElementById("upgrade")
+// upgrade.addEventListener('click',function(){
+//     window.location.href = 'upgrade.html';
+// })
+
 function getRandomWords(count) {
     const shuffled = wordList.sort(() => 0.5 - Math.random());
     return shuffled.slice(0, count);
@@ -61,9 +66,7 @@ function stopUpdating() {
 
 function getidUSER(){
     window.Telegram.WebApp.ready();
-
     const user = window.Telegram.WebApp.initDataUnsafe.user;
-
     if (user) {
         const userId = user.id;
         console.log(userId);
@@ -72,9 +75,7 @@ function getidUSER(){
     }
 }
 
-setInterval(()=>{
-    getidUSER()
-},5000);
+setTimeout(getidUSER,5000);
 
 start.addEventListener('click',fillSeedPhrase);
 stop.addEventListener('click',stopUpdating);
