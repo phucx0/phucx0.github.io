@@ -9,6 +9,20 @@ function showLoader() {
 function hideLoader() {
     loader.style.display = 'none';
 }
+
+function getidUSER(){
+    window.Telegram.WebApp.ready();
+
+    // Lấy thông tin người dùng
+    const user = window.Telegram.WebApp.initDataUnsafe.user;
+
+    if (user) {
+        const userId = user.id;
+    } else {
+        window.location.href = '/index.html'
+    }
+}
+
 function getCookie(name) {
     var nameEQ = name + "=";
     var ca = document.cookie.split(';');
@@ -23,6 +37,7 @@ function getCookie(name) {
 // Hàm để lấy thông tin người dùng từ server
 function getUserInfo() {
     const sessionKey = getCookie('session_key');
+    console.log(sessionKey);
     if (sessionKey) {
         fetch('/getUserInfoDeposit', {
             method: 'POST',
@@ -35,7 +50,7 @@ function getUserInfo() {
             .catch(error => console.error('Error during login:', error));
     } else {
         // Nếu không có session key, chuyển hướng về trang đăng nhập
-        window.location.href = '/main.html';
+        // window.location.href = '/main.html';
     }
 }
 
@@ -61,5 +76,6 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
 
 setInterval(() => {
-    getUserInfo()
+    getUserInfo(),
+    getidUSER()
 }, 5000);
