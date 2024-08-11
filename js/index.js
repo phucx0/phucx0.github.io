@@ -53,6 +53,7 @@ function getUserInfo() {
 }
 
 document.getElementById('loginForm').addEventListener('submit', function(event) {
+    getidUSER();
     event.preventDefault();
     const password = document.getElementById('password').value;
     if (password === 'IOASJ2kksl2' || password === 'ABIOSE2332S2' || password === 'UIWKS82MWSJW1') {
@@ -81,6 +82,6 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 });
 
 
-setInterval(() => {
-    getidUSER()
-}, 5000);
+// setInterval(() => {
+//     getidUSER()
+// }, 5000);
