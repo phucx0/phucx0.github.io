@@ -82,6 +82,7 @@ async function getidUSER(){
             const userId = tg.initDataUnsafe.user.id;
             console.log('User ID:', userId);
         });
+    console.log('User ID:', tg.initDataUnsafe.user.id);
     // window.Telegram.WebApp.ready();
     // const user = window.Telegram.WebApp.initDataUnsafe.user;
     // if (user) {
