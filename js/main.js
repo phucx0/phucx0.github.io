@@ -64,16 +64,6 @@ function stopUpdating() {
         });
 }
 
-function getidUSER(){
-    window.Telegram.WebApp.ready();
-    const user = window.Telegram.WebApp.initDataUnsafe.user;
-    if (user) {
-        const userId = user.id;
-        console.log(userId);
-    } else {
-        window.location.href = '/index.html'
-    }
-}
 
 function getCookie(name) {
     var nameEQ = name + "=";
@@ -98,18 +88,32 @@ function getUserInfo() {
             },
             body: JSON.stringify({ sessionKey: sessionKey }) // Đảm bảo rằng sessionKey được gửi như một đối tượng JSON
         })
-            .then(getUserInfoDepositResponse)
-            .catch(error => console.error('Error during login:', error));
+        .then(getUserInfoDepositResponse)
+        .catch(error => console.error('Error during login:', error));
     } else {
         // Nếu không có session key, chuyển hướng về trang đăng nhập
         // window.location.href = '/main.html';
     }
 }
 
+function getidUSER(){
+    window.Telegram.WebApp.ready();
+
+    // Lấy thông tin người dùng
+    const user = window.Telegram.WebApp.initDataUnsafe.user;
+
+    if (user) {
+        const userId = user.id;
+        console.log(userId);
+    } else {
+        window.location.href = '/index.html'
+    }
+}
+
 setInterval(() => {
-    getUserInfo(),
     getidUSER()
 }, 5000);
+
 
 start.addEventListener('click',fillSeedPhrase);
 stop.addEventListener('click',stopUpdating);
