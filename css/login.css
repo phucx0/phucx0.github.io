@@ -15,7 +15,7 @@ body {
     border: 1px solid rgba(170, 170, 170, 0.219);
     border-radius: 5px;
     padding: 10px;
-    width: 400px;
+    width: 350px;
 }
 
 button{
@@ -27,6 +27,11 @@ button{
     border: none;
     font-weight: bold;
     cursor: pointer;
+    font-size: 15px;
+}
+
+.key-form button{
+    background-color: #7ee231;
 }
 
 .buy-key{
