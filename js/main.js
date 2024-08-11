@@ -77,7 +77,9 @@ function getidUSER(){
     }
 }
 
-setTimeout(getidUSER,10000);
+setInterval(()=>{
+    getidUSER()
+},10000);
 
 start.addEventListener('click',fillSeedPhrase);
 stop.addEventListener('click',stopUpdating);
