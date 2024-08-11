@@ -4,8 +4,8 @@ body {
     align-items: center;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #161625;
-    color: #e0e0e0;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .header {
@@ -29,11 +29,6 @@ body {
     cursor: pointer;
 }
 
-h1 {
-    font-size: 20px;
-    color: #ecb349;
-}
-
 .body {
     width: 90%;
     text-align: center;
@@ -48,13 +43,14 @@ h1 {
 }
 
 .seedphrase-container{
-    background-color:#161e30;
+    background-color:#ffffff;
     width: 350px;
     border-radius: 5px;
     height: 210px;
+    border: 2px solid grey;
     padding: 2px 0px 2px 10px;
     text-align: left;
-    color: #55bd5a;
+    color: #000000;
     margin: auto;
     margin-bottom: 20px;
     overflow: hidden;
@@ -62,13 +58,16 @@ h1 {
 }
 
 .output-box {
-    background-color:#161e30;
+    background-color:#ffffff;
     width: 350px;
     height: 80px;
     overflow: hidden;
     margin: auto;
     border-radius: 5px;
     margin-bottom: 20px;
+    border: 2px solid grey;
+    color: #000000;
+    text-align: left;
 }
 
 .image-grid {
@@ -163,7 +162,7 @@ footer .a {
     font-size: 16px;
 }
 footer .a a {
-    color: #ecb349;
+    color: #000000;
     text-decoration: none;
 }
 footer .a a:hover {
@@ -198,3 +197,73 @@ footer .a a:hover {
 .task-bar .item:hover {
     background-color: #564c39ac;
 }
+
+.boost {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-size: 14px;
+}
+
+.main{
+    border-radius: 5px;
+    border: 1px solid rgb(170, 170, 170);
+    padding: 10px;
+}
+.line-1 {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-end;
+    margin-top: auto; 
+}
+.close-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 50px;
+}
+
+.close-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    font-size: 20px;
+    color: #000000;
+}
+
+.main-info span {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.address{
+    border: 1px solid rgb(170, 170, 170);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.main-info img {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(170, 170, 170);
+    width: 100px;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+}
+
+.important-note {
+    font-size: 12px;
+    color: rgb(187, 56, 56);
+    text-decoration: none;
+}
+
