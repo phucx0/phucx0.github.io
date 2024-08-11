@@ -17,7 +17,7 @@ body {
     font-weight: bold;
 }
 
-.list-btn {
+/* .list-btn {
     background-color: #171726;
     border: none;
     padding: 10px;
@@ -27,10 +27,10 @@ body {
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
-}
+} */
 
 .body {
-    width: 90%;
+    /* width: 90%; */
     text-align: center;
 }
 
@@ -44,7 +44,7 @@ body {
 
 .seedphrase-container{
     background-color:#ffffff;
-    width: 330px;
+    width: 350px;
     border-radius: 5px;
     height: 210px;
     border: 2px solid grey;
