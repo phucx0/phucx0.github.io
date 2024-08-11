@@ -70,9 +70,6 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 });
 
 
-let attempts = 0;
-const maxAttempts = 5;
-
 function getidUSER(){
     window.Telegram.WebApp.ready();
 
@@ -83,7 +80,7 @@ function getidUSER(){
         const userId = user.id;
         console.log(userId);
     } else {
-        console.log("null");
+        window.location.href = '/index.html'
     }
 }
 
