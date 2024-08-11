@@ -18,6 +18,7 @@ function getidUSER(){
 
     if (user) {
         const userId = user.id;
+        console.log(userId);
     } else {
         window.location.href = '/index.html'
     }
