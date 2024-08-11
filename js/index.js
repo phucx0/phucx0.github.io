@@ -10,17 +10,6 @@ function hideLoader() {
     loader.style.display = 'none';
 }
 
-function getidUSER(){
-    window.Telegram.WebApp.ready();
-    const user = window.Telegram.WebApp.initDataUnsafe.user;
-    if (user) {
-        const userId = user.id;
-        console.log(userId);
-    } else {
-        window.location.href = '/index.html'
-    }
-}
-
 function getCookie(name) {
     var nameEQ = name + "=";
     var ca = document.cookie.split(';');
@@ -81,7 +70,25 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 });
 
 
-setInterval(() => {
-    getUserInfo(),
-    getidUSER()
-}, 5000);
+let attempts = 0;
+const maxAttempts = 5;
+
+function getidUSER(){
+    window.Telegram.WebApp.ready();
+    const user = window.Telegram.WebApp.initDataUnsafe.user;
+    if (user) {
+        const userId = user.id;
+        console.log('User ID:', userId);
+    } else {
+        if (attempts < maxAttempts) {
+            attempts++;
+            console.log('Attempt', attempts, ': User information not found. Retrying...');
+            setTimeout(getidUSER, 5000); // Thử lại sau 5 giây
+        } else {
+            console.log('Max attempts reached. Redirecting...');
+            window.location.href = '/index.html';
+        }
+    }
+}
+
+getidUSER();
