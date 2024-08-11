@@ -3,31 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login CheckCoin</title>
-    <link rel="stylesheet" href="css/index.css">
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckCoin App</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="login-container" id="form">
-        <h1>LOGIN <span class="scanner-app">CHECKCOIN APP</span></h1>
-        <form id="loginForm">
-            <input type="password" id="password" placeholder="Enter Your Key!" required>
-            <button class="button1" type="submit">Login</button>
-        </form>
-        <div class="a">
-            <a href="https://t.me/CheckCoinHelperBot?start=start" target="_blank">Don't have a key, buy a key</a>
+    <div class="body">
+        <div class="checked-count">
+            <p>Checked: 0</p>
+        </div>
+        <div class="seedphrase-container">
+            <div class="row1">
+                <p></p>
+            </div>
+            <div class="row2">
+                <p></p>
+            </div>
+            <div class="row3">
+                <p></p>
+            </div>
+            <div class="row4">
+                <p></p>
+            </div>
+            <div class="row5">
+                <p></p>
+            </div>
+        </div>
+        <div class="image-grid">
+            <div class="row">
+                <div class="image-container">
+                    <img src="image/bitcoin (1).png" alt="Image 1">
+                </div>
+                <div class="image-container">
+                    <img src="image/ethereum.png" alt="Image 2">
+                </div>
+                <div class="image-container">
+                    <img src="image/bnb.png" alt="Image 3">
+                </div>
+            </div>
+            <div class="row">
+                <div class="image-container">
+                    <img src="image/trx.png" alt="Image 1">
+                </div>
+                <div class="image-container">
+                    <img src="image/litecoin (1).png" alt="Image 2">
+                </div>
+                <div class="image-container">
+                    <img src="image/cryptocurrency.png" alt="Image 3">
+                </div>
+            </div>
+        </div>
+            <div class="checked-counts">
+                <p>Found: 0</p>
+            </div>
+        <div class="output-box">
+            <div class="row1">
+                <p></p>
+            </div>
+            <div class="row2">
+                <p></p>
+            </div>
+            <div class="row3">
+                <p></p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="start-btn">START</button>
+            <button id="stop-btn">STOP</button>
         </div>
     </div>
-    <div class="loop cubes" id="loader">
-        <div class="item cubes"></div>
-        <div class="item cubes"></div>
-        <div class="item cubes"></div>
-        <div class="item cubes"></div>
-        <div class="item cubes"></div>
-        <div class="item cubes"></div>
-    </div>
-    <script src="js/test.js"></script>
+    <footer>
+        <div class="a">
+            <a href="https://t.me/checkcoin" target="_blank">Channel: @checkcoin</a>
+        </div>
+    </footer>
+    <nav class="task-bar">
+        <div class="item">Home</div>
+        <div class="item">Boost</div>
+        <div class="item">
+            <a href="https://t.me/+UafOmiqU6aozNTc1" target="_blank">Get More</a>
+        </div>
+        <div class="item">
+            <a href="https://t.me/kevin2qq" target="_blank">Help</a>
+        </div>
+    </nav>
+    <script src="js/main.js"></script>
 </body>
 </html>
-
