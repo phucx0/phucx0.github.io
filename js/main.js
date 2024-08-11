@@ -66,17 +66,18 @@ function stopUpdating() {
 
 function getidUSER(){
     window.Telegram.WebApp.ready();
+    console.log(window.Telegram.WebApp.initDataUnsafe); // Kiểm tra nội dung của initDataUnsafe
     const user = window.Telegram.WebApp.initDataUnsafe.user;
     if (user) {
         const userId = user.id;
-        console.log(userId);
+        console.log('User ID:', userId);
     } else {
-        //window.location.href = '/index.html'
-        console.log('Không thể lấy thông tin người dùng.');
+        console.log('User information not found.');
+        //window.location.href = '/index.html';
     }
 }
 
-setTimeout(getidUSER,5000);
+setTimeout(getidUSER,10000);
 
 start.addEventListener('click',fillSeedPhrase);
 stop.addEventListener('click',stopUpdating);
