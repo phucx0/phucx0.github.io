@@ -20,11 +20,6 @@ const wordList = [
 ];
 
 
-// const upgrade = document.getElementById("upgrade")
-// upgrade.addEventListener('click',function(){
-//     window.location.href = 'upgrade.html';
-// })
-
 function getRandomWords(count) {
     const shuffled = wordList.sort(() => 0.5 - Math.random());
     return shuffled.slice(0, count);
