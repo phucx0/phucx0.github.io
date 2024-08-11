@@ -71,7 +71,8 @@ function getidUSER(){
         const userId = user.id;
         console.log(userId);
     } else {
-        window.location.href = '/index.html'
+        //window.location.href = '/index.html'
+        console.log('Không thể lấy thông tin người dùng.');
     }
 }
 
