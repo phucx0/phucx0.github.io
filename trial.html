@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CheckCoin App</title>
@@ -61,16 +60,15 @@
             </div>
         </footer>
     </div>
-    <nav class="task-bar">
-        <div class="item">Home</div>
-        <div class="item" id="boost-click">Booster</div>
-        <div class="item">
-            <a href="https://t.me/checkcoin" target="_blank">Get More</a>
-        </div>
-        <div class="item">
-            <a href="https://t.me/kevin2qq" target="_blank">Help</a>
-        </div>
+    
+    <nav class="nav">
+        <div class="nav-item" id="home">Home</div>
+        <div class="nav-item" id="boost-click">Booster</div>
+        <div class="nav-item" id="more">More</div>
+        <div class="nav-item" id="help">Help</div>
+        <span class="nav-indicator"></span>
     </nav>
+
     <div class="boost" id="boost">
         <div class="line-1">
             <button class="close-btn">
