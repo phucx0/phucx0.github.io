@@ -271,10 +271,10 @@ footer .a a:hover {
     color: #1b1b1a;
     padding: 15px 15px;
     transition: .3s;
-    margin: 0 6px;
     z-index: 1;
     font-weight: bold;
     cursor: pointer;
+    font-size: 14px;
 }
 
 .nav-item:before {
