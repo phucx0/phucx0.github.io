@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/team.css">
+    <title>Team CheckCoin</title>
+</head>
+<body>
+    <div class="container">
+        <div class="line">
+            <button class="create" id="create">
+                Create Team $2000
+            </button>
+            <button class="back" id="back">
+                Back
+            </button>
+        </div>
+        <div class="main">
+            <div class="main-info">
+                <span class="notification">Join the <b>TEAM</b> to speed up wallet searching.</span>
+                <span class="work" id="work"><br>How it works</span>
+                <div class="box">
+                    <div class="col-1">
+                        <span class="team-name">Kevin's Team</span>
+                        <button id="join">Join</button>
+                    </div>
+                    <div class="col-2">
+                        <div class="team-info">
+                            <img src="image/group.png" alt="group">
+                            <span class="member">1/1000</span>
+                        </div>
+                        <span class="speed">Speed : 7123 wallets/s </span>
+                        <span class="profit">$0 </span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="col-1">
+                        <span class="team-name">LEE's Team</span>
+                        <button id="join">Join</button>
+                    </div>
+                    <div class="col-2">
+                        <div class="team-info">
+                            <img src="image/group.png" alt="group">
+                            <span class="member">1/1000</span>
+                        </div>
+                        <span class="speed">Speed : </span>
+                        <span class="profit">$0 </span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="col-1">
+                        <span class="team-name">Micheal's Team</span>
+                        <button id="join">Join</button>
+                    </div>
+                    <div class="col-2">
+                        <div class="team-info">
+                            <img src="image/group.png" alt="group">
+                            <span class="member">1/1000</span>
+                        </div>
+                        <span class="speed">Speed : </span>
+                        <span class="profit">$0 </span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="col-1">
+                        <span class="team-name">James's Team</span>
+                        <button id="join">Join</button>
+                    </div>
+                    <div class="col-2">
+                        <div class="team-info">
+                            <img src="image/group.png" alt="group">
+                            <span class="member">1/1000</span>
+                        </div>
+                        <span class="speed">Speed : </span>
+                        <span class="profit">$0 </span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="col-1">
+                        <span class="team-name">Mining's Team</span>
+                        <button id="join">Join</button>
+                    </div>
+                    <div class="col-2">
+                        <div class="team-info">
+                            <img src="image/group.png" alt="group">
+                            <span class="member">1/1000</span>
+                        </div>
+                        <span class="speed">Speed : </span>
+                        <span class="profit">$0 </span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="col-1">
+                        <span class="team-name">Vikto's Team</span>
+                        <button id="join">Join</button>
+                    </div>
+                    <div class="col-2">
+                        <div class="team-info">
+                            <img src="image/group.png" alt="group">
+                            <span class="member">1/1000</span>
+                        </div>
+                        <span class="speed">Speed : </span>
+                        <span class="profit">$0 </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="loader-3" id="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <div class="pop-up" id="pop-up">
+        <div class="main-pop-up">
+            <div class="line-pop-up" id="close"><img src="image/close.png" alt="close"></div>
+            <div class="main-info-pop-up">
+                <div>
+                    <span><i>This is a team feature. It supports team members to collaborate, mine faster, and share profits together.</i></span>
+                    <span class="bold-text">Method of profit sharing :</span>
+                    <span>&#10687; Team leader will receive 10% of the total profit.</span>
+                    <span>&#10687; Remaining 90% will be evenly distributed among the participating members based on their POW.</span>
+                    <span class="bold-text">What does POW mean ?</span>
+                    <span><i>POW is considered a measure of contribution to help the team mine faster.</i></span>
+                    <span class="bold-text">For example :</span>
+                    <span>The team's profit is $1000, and 100 POW has been contributed to the team.</span>
+                    <span>&#10687; 10% will go to the leader ($100).</span>
+                    <span>&#10687; 90% will be distributed among the remaining members ($900).</span>
+                    <span>&rArr; If you hold 2 POW, you will receive $18</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/team.js"></script>
+</body>
+</html>
