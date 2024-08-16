@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    padding: 20px 10px;
+    margin: 0;
+    background-color: black;
+    justify-content: space-between;
+}
+
+.header button{
+    margin-right: 10px;
+    border: none;
+    background-color:rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.header button:hover{
+    transform: scale(1.2);
+    transition: .2s transform linear, .2s height linear .2s;
+}
+
+
+
+.name p{
+    margin: 0;
+    font-size: 30px;
+    color: white;
+}
+
+.main {
+    padding: 20px;
+}
+
+.main .line{
+    font-size: 30px;
+    font-family: "Anton", sans-serif;
+    text-align: center;
+}
+
+.all-card{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 550px;
+    margin: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.185);
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 8px 0 8px 0;
+}
+
+.name-software {
+    font-size: 20px;
+    /* font-family: "Anton", sans-serif; */
+}
+
+.box {
+    width: 140px;
+    height: auto;
+    float: left;
+    transition: .5s linear;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    margin: 0 5px;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  
+  .box:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+  }
+  
+  .box:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+  }
+  
+  .box:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .box:hover:before {
+    border-color: #262626;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+  }
+  
+  .box:hover:after {
+    border-color: #262626;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .5s;
+  }
+  
+  .more button {
+    color: black;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+  }
+
+  .site-footer {
+    background-color: #000000; /* Background color of the footer */
+    color: white; /* Text color */
+    padding: 20px 0; /* Padding for top and bottom */
+    text-align: center; /* Center-align the content */
+}
+
+.container {
+    max-width: 1200px; /* Maximum width of the footer */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Padding for the sides */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align the footer content */
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0; 
+    display: flex;
+    gap: 40px;
+}
+
+.social-links li {
+    font-weight: bold;
+    display: inline;
+    cursor: pointer;
+}
+
+.social-links li:hover{
+    text-decoration: underline;
+}
