@@ -44,12 +44,18 @@ body{
 }
 
 .all-card {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     align-items: center;     
     flex-direction: column; 
     width: 90%;             
     margin: 0 auto;
+}
+
+@media(max-width:800px){
+    .all-card{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 
 .card{
@@ -139,12 +145,17 @@ body{
     background: transparent;
   }
 
-.site-footer {
+  .site-footer {
     background-color: #000000;
     color: white;
     padding: 20px 0; 
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
 }
+
 
 .container {
     max-width: 1200px;
