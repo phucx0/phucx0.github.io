@@ -43,23 +43,23 @@ body{
     text-align: center;
 }
 
-.all-card{
-    margin: 10px;
+.all-card {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;     
+    flex-direction: column; 
+    width: 90%;             
+    margin: 0 auto;
 }
 
 .card{
-    width: 40%;
     margin: 20px;
     border: 2px solid rgba(0, 0, 0, 0.185);
     border-radius: 10px;
     padding: 10px;
     overflow: hidden;
-    border-radius: 8px;
     text-align: center;
+    border-radius: 8px;
 }
 
 .card img{
@@ -69,7 +69,6 @@ body{
 
 .name-software {
     font-size: 20px;
-    /* font-family: "Anton", sans-serif; */
 }
 
 .box {
@@ -140,17 +139,17 @@ body{
     background: transparent;
   }
 
-  .site-footer {
-    background-color: #000000; /* Background color of the footer */
-    color: white; /* Text color */
-    padding: 20px 0; /* Padding for top and bottom */
-    text-align: center; /* Center-align the content */
+.site-footer {
+    background-color: #000000;
+    color: white;
+    padding: 20px 0; 
+    text-align: center;
 }
 
 .container {
-    max-width: 1200px; /* Maximum width of the footer */
-    margin: 0 auto; /* Center the container */
-    padding: 0 20px; /* Padding for the sides */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .footer-content {
