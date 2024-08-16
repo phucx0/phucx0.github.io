@@ -52,7 +52,7 @@ body{
 }
 
 .card{
-    width: 550px;
+    width: 40%;
     margin: 20px;
     border: 2px solid rgba(0, 0, 0, 0.185);
     border-radius: 10px;
