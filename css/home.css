@@ -49,8 +49,6 @@ body{
 .all-card {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    align-items: center;     
-    flex-direction: column; 
     width: 90%;             
     margin: 0 auto;
 }
@@ -158,8 +156,21 @@ body{
 }
 
 .info{
+    margin: 0 auto;
+    /* display: grid;
+    grid-template-columns: repeat(2,1pr); */
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+}
+
+.col-2{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.col-2 .a{
+    margin: 0 10px;
 }
 
 .main-info{
@@ -211,12 +222,11 @@ body{
     text-decoration: underline;
 }
 
-.col-2 {
-    margin: 20px 40px;
-    display: flex;
-    flex-direction: row;
-}
 
-.col-2 div{
-    margin: 10px;
+/* video */
+
+.video{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
 }
