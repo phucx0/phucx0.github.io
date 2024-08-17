@@ -244,16 +244,17 @@ body{
     text-decoration: underline;
 }
 
-
 /* notification */
-.notification-pop-up{
+.notification-pop-up {
     display: none;
     justify-content: center;
+    padding: 0 20px;
     width: 100%;
-    padding: 20px;
     position: fixed;
     top: 20%;
+    box-sizing: border-box; /* Ensure padding is included within the width */
 }
+
 
 .notification-pop-up .container{
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
@@ -265,8 +266,8 @@ body{
 
 @media (max-width: 480px) {
     .notification-pop-up .container {
-        width: 80%;  /* Reduce width on small screens */
-        max-width: none;  /* Allow it to expand to 90% */
+        width: 80%;
+        max-width: none;
     }
 }
 
