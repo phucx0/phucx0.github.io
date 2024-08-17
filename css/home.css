@@ -265,7 +265,7 @@ body{
 
 @media (max-width: 480px) {
     .notification-pop-up .container {
-        width: 80%;
+        width: 90%;
         max-width: none;
     }
 }
