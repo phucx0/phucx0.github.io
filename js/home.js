@@ -14,6 +14,13 @@ document.getElementById('buy-now').addEventListener('click',()=>{
     window.location.href ="https://t.me/kevin2qq"
 })
 
+document.getElementById('buy-1').addEventListener('click',()=>{
+    window.location.href ="https://t.me/kevin2qq"
+})
+document.getElementById('buy-2').addEventListener('click',()=>{
+    window.location.href ="https://t.me/kevin2qq"
+})
+
 
 document.getElementById('lean-more-pc').addEventListener('click',()=>{
     document.querySelector('.body').style.opacity = "0.1";
