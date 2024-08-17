@@ -7,7 +7,7 @@ body{
     display: flex;
     flex-direction: column;
 }
-
+/* body */
 .header{
     display: flex;
     padding: 20px 10px;
@@ -223,10 +223,70 @@ body{
 }
 
 
-/* video */
-
-.video{
+/* notification */
+.notification-pop-up{
+    display: none;
+    justify-content: center;
+    width: 100%;
     padding: 20px;
+    position: fixed;
+    top: 20%;
+}
+
+.notification-pop-up .container{
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    width: 60%;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.container .line{
+    display: flex;
+    justify-content: end;
+}
+
+.line button{
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size:18px ;
+}
+
+.notification-pop-up .container .name-info{
+    font-weight: bold;
+}
+
+.main-info-pop-up{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-info-pop-up span{
+    margin: 5px;
+}
+
+.buy-software{
     display: flex;
     justify-content: center;
 }
+
+.buy-software button{
+    cursor: pointer;
+    border: none;
+    background-color: #eeeeee2f;
+}
+
+/* video */
+
+.video{
+    display: flex;
+    justify-content: center;
+    padding :20px;
+}
+
+.video iframe{
+    border-radius: 8px;
+}
+
