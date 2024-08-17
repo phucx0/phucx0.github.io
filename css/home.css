@@ -257,7 +257,7 @@ body{
 
 .notification-pop-up .container{
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-    width: 90%;
+    width: 400px;
     border-radius: 8px;
     background-color: #ffffff;
     padding: 20px;
