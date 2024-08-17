@@ -257,7 +257,6 @@ body{
 
 .notification-pop-up .container{
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-    max-width: 350px;
     border-radius: 8px;
     background-color: #ffffff;
     padding: 20px;
@@ -266,7 +265,7 @@ body{
 
 @media (max-width: 480px) {
     .notification-pop-up .container {
-        width: 90%;  /* Reduce width on small screens */
+        width: 80%;  /* Reduce width on small screens */
         max-width: none;  /* Allow it to expand to 90% */
     }
 }
