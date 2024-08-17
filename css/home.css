@@ -284,6 +284,7 @@ body{
 }
 
 .notification-pop-up .container .name-info{
+    padding-left: 10px;
     font-weight: bold;
 }
 
@@ -293,7 +294,7 @@ body{
 }
 
 .main-info-pop-up span{
-    margin: 5px;
+    padding-left: 10px;
 }
 
 .buy-software{
