@@ -58,6 +58,9 @@ body{
     font-family: "Anton", sans-serif;
     text-align: center;
 }
+.notify{
+    overflow:hidden ;
+}
 
 .script-line {
     overflow: hidden;
